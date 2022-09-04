@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import "@fontsource/itim";
+import "@fontsource/karla";
 import { Fragment } from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
