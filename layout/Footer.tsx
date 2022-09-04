@@ -1,4 +1,4 @@
-import { BsFacebook, BsWhatsapp, BsTelephone } from "react-icons/bs";
+import { BsWhatsapp, BsTelephone } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
 
 const Footer = (): JSX.Element => {
