@@ -14,34 +14,6 @@ const Home: NextPage = () => {
       content:
         "We offer 4 unique subjects for you and your child to choose from.",
     },
-    {
-      symbol: <BiBookBookmark />,
-      color: "yellow",
-      title: "Services",
-      content:
-        "We offer 4 unique subjects for you and your child to choose from.",
-    },
-    {
-      symbol: <BiBookBookmark />,
-      color: "yellow",
-      title: "Services",
-      content:
-        "We offer 4 unique subjects for you and your child to choose from.",
-    },
-    {
-      symbol: <BiBookBookmark />,
-      color: "yellow",
-      title: "Services",
-      content:
-        "We offer 4 unique subjects for you and your child to choose from.",
-    },
-    {
-      symbol: <BiBookBookmark />,
-      color: "yellow",
-      title: "Services",
-      content:
-        "We offer 4 unique subjects for you and your child to choose from.",
-    },
   ];
   const carouselData = [
     "/chalk.JPG",
@@ -68,7 +40,12 @@ const Home: NextPage = () => {
     <Carousel.Item key={nanoid()}>
       <picture className="relative">
         <source srcSet={item} />
-        <img src={item} alt={item} className="h-96 w-full object-cover" />
+        <img
+          src={item}
+          alt={item}
+          className="h-96 w-full object-cover"
+          loading="lazy"
+        />
         <h1 className="absolute bottom-4 right-5 text-4xl font-itim font-medium text-white">
           What&apos;s right for your child.
         </h1>
@@ -100,6 +77,7 @@ const Home: NextPage = () => {
             className="object-cover w-96 h-96 border-6 rounded-xl"
             src="/pencils-left.JPG"
             alt="Pencils"
+            loading="lazy"
           />
         </picture>
         <p className="text-4xl text-ellipsis h-50">
