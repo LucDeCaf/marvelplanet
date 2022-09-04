@@ -55,7 +55,7 @@ const Card = ({ color, symbol, title, content }: CardType): JSX.Element => {
   return (
     <div
       className={
-        "w-72 h-72 mb-3 p-8 border-2 rounded-md font-poppins " +
+        "w-full h-auto p-8 inline-block border-2 rounded-md font-poppins " +
         background +
         " " +
         border
