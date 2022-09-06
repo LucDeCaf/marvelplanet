@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+main {
+  animation: fadeIn 0.75s ease-out;
+}
+
+img {
+  object-fit: cover;
+}

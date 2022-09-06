@@ -1,6 +1,6 @@
-import { TbBulb } from "react-icons/tb";
 import { HiMenu } from "react-icons/hi";
 import { useState } from "react";
+import Image from "next/image";
 
 const Navbar = (): JSX.Element => {
   const [showMenu, setShowMenu] = useState(false);
@@ -8,8 +8,8 @@ const Navbar = (): JSX.Element => {
   return (
     <nav className="sticky top-0 h-auto mb-2 bg-slate-100 shadow-md z-50">
       <div className="grid grid-cols-3 items-center py-3 px-6">
-        <span className="text-5xl justify-self-start">
-          <TbBulb />
+        <span className="relative w-32 h-32 justify-self-start">
+          <Image src="/logo.png" alt="Logo" layout="fill" width={432} height={387} />
         </span>
         <div className="justify-self-center font-itim text-center tracking-tight">
           <h1 className="text-5xl lg:w-auto w-40">Marvel Planet</h1>

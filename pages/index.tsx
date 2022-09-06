@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
   // ELEMENTS: Elements are generated from data here: vvv
   const cardElements = (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center p-3 justify-items-center gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center p-3 justify-items-center gap-4">
       {cardData.map((item: CardType) => (
         <Card
           key={nanoid()}
@@ -71,15 +71,7 @@ const Home: NextPage = () => {
       <picture>
         <img src="/waves/slate-100.svg" alt="" />
       </picture>
-      <div className="grid grid-cols-2 pb-10 justify-between justify-items-center text-center font-itim font-light mt-0 bg-slate-100 px-10 text-neutral-800">
-        <picture>
-          <img
-            className="object-cover w-96 h-96 border-6 rounded-xl"
-            src="/pencils-left.JPG"
-            alt="Pencils"
-            loading="lazy"
-          />
-        </picture>
+      <div className="pb-10 justify-between justify-items-center text-center font-itim font-light mt-0 bg-slate-100 px-10 text-neutral-800">
         <p className="text-4xl text-ellipsis h-50">
           Marvel Planet accommodates children with developmental delays,
           children who have experienced trauma (such as bullying), learners with
@@ -88,6 +80,7 @@ const Home: NextPage = () => {
           or are advanced in one particular subject but need more time in
           another.
         </p>
+        {cardElements}
       </div>
     </main>
   );
