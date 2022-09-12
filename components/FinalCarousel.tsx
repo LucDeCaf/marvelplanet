@@ -14,9 +14,9 @@ const FinalCarousel = ({ data }: Props): JSX.Element => {
           alt={item}
           className="h-96 w-full object-cover"
         />
-        <h1 className="absolute bottom-4 right-5 text-4xl font-itim font-medium text-white">
+        <span className="absolute bottom-4 right-5 text-4xl font-itim text-center font-medium text-white">
           What&apos;s right for your child.
-        </h1>
+        </span>
       </picture>
     </Carousel.Item>
   ));

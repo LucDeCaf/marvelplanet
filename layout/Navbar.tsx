@@ -37,7 +37,7 @@ const Navbar = (): JSX.Element => {
           />
         </span>
         <div className="justify-self-center font-itim text-center tracking-tight">
-          <h1 className="text-5xl lg:w-auto w-40">Marvel Planet</h1>
+          <h1 className="text-5xl lg:w-auto w-40 sm:block hidden">Marvel Planet</h1>
           <h2 className="lg:block hidden text-3xl">Tutor and Support Centre</h2>
         </div>
         {/* Menu Button */}
@@ -54,7 +54,7 @@ const Navbar = (): JSX.Element => {
       {showMenu && (
         <>
           <div className="flex bg-slate-200 text-xl font-medium">
-            <ul>
+            <ul onClick={() => setShowMenu(false)}>
               <MenuItem href="/">Home</MenuItem>
               <MenuItem href="/contact">Contact</MenuItem>
               <MenuItem href="/about">About Us</MenuItem>

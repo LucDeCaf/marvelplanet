@@ -43,16 +43,16 @@ const Home: NextPage = () => {
       <h1 className="m-4 mb-2 text-center text-5xl font-itim">
         Prepare for your future!
       </h1>
-      <p className="text-gray-800 text-center">
+      <p className="text-gray-800 text-center text-lg">
         Out of a love for child development and a desperate need for an
         alternative learning space,
         <br />
         Roxanne Edson established Marvel Planet Tutor Center in 2017.
       </p>
       <picture>
-        <img src="/waves/slate-100.svg" alt="" />
+        <img src="/waves/slate-200.svg" alt="" />
       </picture>
-      <div className="pb-10 justify-between justify-items-center text-center font-itim font-light mt-0 bg-slate-100 px-10 text-neutral-800">
+      <div className="pb-10 justify-between justify-items-center text-center font-itim font-light mt-0 bg-slate-200 px-10 text-neutral-800">
         <p className="text-4xl text-ellipsis h-50">
           Marvel Planet accommodates children with developmental delays,
           children who have experienced trauma (such as bullying), learners with
