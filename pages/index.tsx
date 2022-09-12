@@ -2,10 +2,9 @@ import type { NextPage } from "next";
 import { BiBookBookmark } from "react-icons/bi";
 import Card, { CardType } from "../components/Card";
 import { nanoid } from "nanoid";
-import Carousel from "better-react-carousel";
+import FinalCarousel from "../components/FinalCarousel";
 
 const Home: NextPage = () => {
-  // DATA: Define elements here: vvv
   const cardData: CardType[] = [
     {
       symbol: <BiBookBookmark />,
@@ -17,12 +16,11 @@ const Home: NextPage = () => {
   ];
   const carouselData = [
     "/chalk.JPG",
-    "book-stack.JPG",
-    "children.JPG",
-    "pencil-circle.JPG",
+    "/book-stack.JPG",
+    "/children.JPG",
+    "/pencil-circle.JPG",
   ];
 
-  // ELEMENTS: Elements are generated from data here: vvv
   const cardElements = (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center p-3 justify-items-center gap-4">
       {cardData.map((item: CardType) => (
@@ -36,28 +34,11 @@ const Home: NextPage = () => {
       ))}
     </div>
   );
-  const carouselElements = carouselData.map((item: string) => (
-    <Carousel.Item key={nanoid()}>
-      <picture className="relative">
-        <source srcSet={item} />
-        <img
-          src={item}
-          alt={item}
-          className="h-96 w-full object-cover"
-          loading="lazy"
-        />
-        <h1 className="absolute bottom-4 right-5 text-4xl font-itim font-medium text-white">
-          What&apos;s right for your child.
-        </h1>
-      </picture>
-    </Carousel.Item>
-  ));
-
-  // CONTENT: Actually visible JSX goes here: vvv
+  
   return (
     <main className="flex flex-col justify-center">
       <div className="">
-        <Carousel loop>{carouselElements}</Carousel>
+        <FinalCarousel data={carouselData} />
       </div>
       <h1 className="m-4 mb-2 text-center text-5xl font-itim">
         Prepare for your future!
