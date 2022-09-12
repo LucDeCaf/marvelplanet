@@ -11,13 +11,13 @@ const MenuItem = ({
   href: string;
 }): JSX.Element => {
   return (
-    <li className="px-10 py-2 hover:bg-slate-300 active:bg-slate-400 w-screen">
-      <Link href={href}>
-        <a>
+    <Link href={href}>
+      <a>
+        <li className="px-10 py-2 hover:bg-slate-300 active:bg-slate-400 w-screen">
           <li>{children}</li>
-        </a>
-      </Link>
-    </li>
+        </li>
+      </a>
+    </Link>
   );
 };
 
