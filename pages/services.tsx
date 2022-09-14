@@ -7,7 +7,7 @@ import { FaMoneyBillWave } from "react-icons/fa";
 const Page: NextPage = () => {
   return (
     <main>
-      <FinalCarousel data={["/children.jpg"]} />
+      <FinalCarousel data={["/children.JPG"]} />
       <h1 id="title" className="m-4 mb-0 text-center text-5xl font-itim">
         Services &amp; Fees
       </h1>

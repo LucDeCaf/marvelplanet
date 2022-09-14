@@ -12,7 +12,7 @@ const Page: NextPage = () => {
       <h1 className="mt-4 text-center text-5xl font-itim">Contact Us</h1>
       <picture>
         <img src="/waves/slate-200.svg" alt="" />
-        <div className="m-0 p-4 bg-slate-200">
+        <div className="w-screen m-0 p-4 bg-slate-200">
           <ul className="text-3xl mb-2 ml-4 space-y-3">
             <li className="flex items-center">
               <BsWhatsapp className="mr-3" />
@@ -43,7 +43,17 @@ const Page: NextPage = () => {
                 href="mailto:info@marvelplanet.co.za"
                 className="text-blue-700 hover:underline"
               >
-                info@marvelplanet.co.za
+                info
+                <wbr />
+                @
+                <wbr />
+                marvel
+                <wbr />
+                planet
+                <wbr />
+                .co
+                <wbr />
+                .za
               </a>
             </li>
           </ul>
