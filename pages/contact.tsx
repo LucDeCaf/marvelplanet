@@ -4,7 +4,7 @@ import { BsWhatsapp, BsTelephone } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
 
 const Page: NextPage = () => {
-  const carouselData = ["/book-stack.JPG"];
+  const carouselData = ["/chalk.JPG"];
 
   return (
     <main>
