@@ -2,15 +2,22 @@ export interface CardType {
   // Supported colours go here - can be edited fairly easily
   color: "green" | "orange" | "yellow" | "blue" | "pink" | "purple" | "red";
   title: string;
-  content: string;
+  content?: string;
   symbol?: JSX.Element;
+  url?: string;
 }
 
-const Card = ({ color, symbol, title, content }: CardType): JSX.Element => {
+const Card = ({
+  color,
+  symbol,
+  title,
+  content,
+  url,
+}: CardType): JSX.Element => {
   let background: string;
   let border: string;
 
-  // A switch is used because oherwise Tailwind just doesn't work
+  // A switch is used because oherwise Tailwind/PostCSS doesn't pick up classes
   switch (color) {
     case "green":
       background = "bg-green-300 text-green-900";
@@ -53,18 +60,30 @@ const Card = ({ color, symbol, title, content }: CardType): JSX.Element => {
   }
 
   return (
-    <div
-      className={
-        "w-full h-auto p-8 inline-block border-2 rounded-md font-poppins " +
-        background +
-        " " +
-        border
-      }
-    >
-      <span className="text-5xl">{symbol}</span>
-      <h1 className="text-2xl font-bold font-itim tracking-tighter mt-4">{title}</h1>
-      <p className="text-xl font-medium">{content}</p>
-    </div>
+    <a href={url}>
+      <div
+        className={
+          "w-full h-full p-8 inline-block border-2 rounded-md font-poppins " +
+          background +
+          " " +
+          border
+        }
+      >
+        <span className="text-5xl">{symbol}</span>
+        {content ? (
+          <>
+            <h1 className="text-2xl font-bold font-itim tracking-tighter mt-4">
+              {title}
+            </h1>
+            <p className="text-xl font-medium">{content}</p>
+          </>
+        ) : (
+          <h1 className="text-5xl font-bold font-itim tracking-tighter mt-4">
+            {title}
+          </h1>
+        )}
+      </div>
+    </a>
   );
 };
 

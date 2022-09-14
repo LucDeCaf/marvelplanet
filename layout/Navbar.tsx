@@ -29,7 +29,7 @@ const Navbar = (): JSX.Element => {
       <div className="grid grid-cols-3 items-center py-3 px-6">
         <span className="relative w-32 h-32 justify-self-start">
           <Image
-            src="/logo.png"
+            src="/logo.webp"
             alt="Logo"
             layout="fill"
             width={432}
@@ -58,6 +58,7 @@ const Navbar = (): JSX.Element => {
               <MenuItem href="/">Home</MenuItem>
               <MenuItem href="/contact">Contact</MenuItem>
               <MenuItem href="/about">About Us</MenuItem>
+              <MenuItem href="/services">Services</MenuItem>
             </ul>
           </div>
         </>
