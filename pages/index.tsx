@@ -1,9 +1,9 @@
-import type { NextPage } from "next";
+import { NextPage } from "next";
 import { BiBookBookmark } from "react-icons/bi";
 import Card from "../components/Card";
 import FinalCarousel from "../components/FinalCarousel";
 
-const Home: NextPage = () => {
+const Page: NextPage = () => {
   const carouselData = [
     "/chalk.JPG",
     "/children.JPG",
@@ -78,4 +78,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Page;
