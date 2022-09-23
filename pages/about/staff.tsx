@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import FinalCarousel from "../../components/FinalCarousel";
 import BackButton from "../../components/BackButton";
+import Profile from "../../components/Profile";
 
 const Page: NextPage = () => {
   return (
@@ -12,9 +13,32 @@ const Page: NextPage = () => {
         <img src="/waves/slate-200.svg" alt="" />
       </picture>
       <div className="bg-slate-200 m-0 pb-5 px-10">
-        <p className="text-3xl text-center font-karla">
-          staff_content_here
+        <p className="mb-4 text-3xl text-center font-karla">
+          Come and meet our amazing team.
         </p>
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <div>
+            <Profile
+              name="Such a cool title here."
+              desc="This is a very simple little description, meant to test the waters a bit. nnnevermind."
+              src="/chalk.JPG"
+            />
+          </div>
+          <div>
+            <Profile
+              name="Such a cool title here."
+              desc="This is a very simple little description, meant to test the waters a bit. nnnevermind."
+              src="/chalk.JPG"
+            />
+          </div>
+          <div>
+            <Profile
+              name="Such a cool title here."
+              desc="This is a very simple little description, meant to test the waters a bit. nnnevermind."
+              src="/chalk.JPG"
+            />
+          </div>
+        </div>
       </div>
     </main>
   );
