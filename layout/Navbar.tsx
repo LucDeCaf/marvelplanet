@@ -31,7 +31,9 @@ const Navbar = (): JSX.Element => {
           <Image
             src="/logo.webp"
             alt="Logo"
-            layout="fill"
+            layout="responsive"
+            width={156}
+            height={156}
           />
         </span>
         <div className="justify-self-center font-itim text-center tracking-tight">

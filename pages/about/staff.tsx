@@ -7,7 +7,7 @@ const Page: NextPage = () => {
   return (
     <main>
       <FinalCarousel data={["/pencil-circle.JPG"]} noText={true} />
-      <BackButton href="/about">Back</BackButton>
+      <BackButton>Back</BackButton>
       <h1 className="m-4 mb-0 text-center text-5xl font-itim">Our Staff</h1>
       <picture>
         <img src="/waves/slate-200.svg" alt="" />

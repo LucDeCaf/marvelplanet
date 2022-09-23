@@ -16,7 +16,6 @@ const Page: NextPage = () => {
           <ul className="text-3xl mb-2 ml-4 space-y-3">
             <li className="flex items-center">
               <BsWhatsapp className="mr-3" />
-              Whatsapp:&nbsp;
               <a
                 href="https://wa.me/+27662134916"
                 target="_blank"
@@ -28,7 +27,6 @@ const Page: NextPage = () => {
             </li>
             <li className="flex items-center">
               <BsTelephone className="mr-3" />
-              Phone:&nbsp;
               <a
                 href="tel:+27662134916"
                 className="text-blue-700 hover:underline"
@@ -38,7 +36,6 @@ const Page: NextPage = () => {
             </li>
             <li className="flex items-center">
               <HiMail className="mr-3" />
-              Email:&nbsp;
               <a
                 href="mailto:info@marvelplanet.co.za"
                 className="text-blue-700 hover:underline"

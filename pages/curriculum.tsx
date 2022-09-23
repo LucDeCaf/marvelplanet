@@ -5,7 +5,7 @@ const Page: NextPage = () => {
   return (
     <main>
       <div className="fixed">
-        <BackButton href="/">Back</BackButton>
+        <BackButton>Back</BackButton>
       </div>
       <div className="h-screen flex flex-col justify-center items-center">
         <h1 className="text-center font-itim text-6xl mb-4">Sorry!</h1>
