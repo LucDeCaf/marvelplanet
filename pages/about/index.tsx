@@ -1,7 +1,8 @@
-import type { NextPage } from "next";
+import { NextPage } from "next";
 import Card from "../../components/Card";
 import FinalCarousel from "../../components/FinalCarousel";
-import { BsFillCaretDownFill } from "react-icons/bs";
+import { FiBook } from "react-icons/fi";
+import { BsFillPersonFill, BsFillStarFill } from "react-icons/bs";
 
 const Page: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const Page: NextPage = () => {
       </h1>
       <h4 className="text-3xl text-center font-karla">
         Learn about the wonderful work-force behind our tutor centre here at
-        Marvel Planet
+        Marvel Planet.
       </h4>
       <picture>
         <img src="/waves/slate-200.svg" alt="" />
@@ -21,19 +22,19 @@ const Page: NextPage = () => {
         <div className="mb-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center p-3 justify-items-stretch gap-4">
           <Card
             title="History"
-            symbol={<BsFillCaretDownFill />}
+            symbol={<FiBook />}
             color="blue"
             url="/about/history"
           />
           <Card
             title="Staff"
-            symbol={<BsFillCaretDownFill />}
+            symbol={<BsFillPersonFill />}
             color="blue"
             url="/about/staff"
           />
           <Card
             title="Values"
-            symbol={<BsFillCaretDownFill />}
+            symbol={<BsFillStarFill />}
             color="blue"
             url="/about/values"
           />
