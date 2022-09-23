@@ -37,12 +37,12 @@ const Page: NextPage = () => {
           url="#blended-title"
         />
       </div>
-      <picture>
+      <picture id="admin-title">
         <img src="/waves/slate-200.svg" alt="" />
       </picture>
       <div className="p-4 bg-slate-200">
         <div>
-          <h1 className="text-4xl font-bold" id="admin-title">
+          <h1 className="text-4xl font-bold" id="onsite-title">
             Admin Support Only
           </h1>
           <ul className="list-disc ml-6">
@@ -61,7 +61,7 @@ const Page: NextPage = () => {
           <br />
         </div>
         <div>
-          <h1 className="text-4xl font-bold" id="onsite-title">
+          <h1 className="text-4xl font-bold" id="online-title">
             Onsite Learning Only
           </h1>
           <ul className="list-disc ml-6">
@@ -84,7 +84,7 @@ const Page: NextPage = () => {
           <br />
         </div>
         <div>
-          <h1 className="text-4xl font-bold" id="online-title">
+          <h1 className="text-4xl font-bold" id="blended-title">
             Online Learning Only
           </h1>
           <ul className="list-disc ml-6">
@@ -107,7 +107,7 @@ const Page: NextPage = () => {
           <br />
         </div>
         <div>
-          <h1 className="text-4xl font-bold" id="blended-title">
+          <h1 className="text-4xl font-bold">
             Blended Learning (Online &amp; Onsite)
           </h1>
           <ul className="list-disc ml-6">
