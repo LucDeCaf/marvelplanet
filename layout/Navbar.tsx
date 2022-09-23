@@ -25,7 +25,7 @@ const Navbar = (): JSX.Element => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="sticky top-0 h-auto mb-2 bg-slate-100 shadow-md z-50">
+    <nav className="sticky top-0 h-auto mb-2 bg-slate-100 text-black shadow-md z-50">
       <div className="grid grid-cols-3 items-center py-3 px-6">
         <span className="relative w-32 h-32 justify-self-start">
           <Image

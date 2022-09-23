@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <h1 className="m-4 mb-2 text-center text-5xl font-itim">
         Prepare for your future!
       </h1>
-      <p className="text-gray-800 text-center text-lg">
+      <p className="text-gray-800 text-center text-3xl font-karla">
         Out of a love for child development and a desperate need for an
         alternative learning space,
         <br />
