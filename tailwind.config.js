@@ -8,17 +8,17 @@ module.exports = {
       },
       keyframes: {
         navDropdown: {
-          "0%": { top: 0 },
+          "0%": { top: "-12rem" },
           "100%": { top: "12rem" },
         },
         navDropup: {
           "0%": { top: "12rem" },
-          "100%": { top: 0 },
+          "100%": { top: "-12rem" },
         },
       },
       animation: {
-        navDropdown: "navDropdown 0.25s ease-out",
-        navDropup: "navDropup 0.25s ease-out",
+        navDropdown: "navDropdown 0.4s ease-out",
+        navDropup: "navDropup 0.5s",
       },
     },
   },

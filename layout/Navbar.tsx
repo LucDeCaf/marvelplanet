@@ -39,7 +39,7 @@ const Navbar = (): JSX.Element => {
         className={
           showMenu
             ? "z-40 absolute top-48 animate-navDropdown"
-            : "z-40 absolute top-0 animate-navDropup"
+            : "z-40 absolute -top-48 animate-navDropup"
         }
       >
         <ul onClick={() => setShowMenu(false)}>
@@ -47,6 +47,7 @@ const Navbar = (): JSX.Element => {
           <MenuItem href="/contact">Contact</MenuItem>
           <MenuItem href="/about">About Us</MenuItem>
           <MenuItem href="/services">Services</MenuItem>
+          <MenuItem href="/curriculum">Curriculum</MenuItem>
         </ul>
       </div>
     </nav>
