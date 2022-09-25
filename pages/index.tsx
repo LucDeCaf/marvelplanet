@@ -48,7 +48,7 @@ const Page: NextPage = () => {
             symbol={<BiBookBookmark />}
             color="pink"
             title="Curriculum"
-            content="We offer different curriculums"
+            content="Choose between 2 different curriculums"
             url="/curriculum"
           />
           <Card

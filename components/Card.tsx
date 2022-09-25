@@ -59,29 +59,39 @@ const Card = ({
       border = "border-white";
   }
 
+  const options = {
+    href: url ? url : undefined,
+    target: "_self",
+    rel: "",
+  };
+
+  if (url) {
+    if (url[0] !== "/" && url[0] !== "#") {
+      options.target = "_blank";
+      options.rel = "noreferrer";
+    }
+  }
+
   return (
-    <a href={url}>
+    <a {...options}>
       <div
         className={
-          "w-full h-full p-8 inline-block border-2 rounded-md font-poppins " +
+          "w-full h-full p-8 inline-block border-2 rounded-md " +
           background +
           " " +
           border
         }
       >
         <span className="text-5xl">{symbol}</span>
-        {content ? (
-          <>
-            <h1 className="text-2xl font-bold font-itim tracking-tighter mt-4">
-              {title}
-            </h1>
-            <p className="text-xl font-karla">{content}</p>
-          </>
-        ) : (
-          <h1 className="text-5xl font-bold font-itim tracking-tighter mt-4">
-            {title}
-          </h1>
-        )}
+        <h1
+          className={
+            "font-bold font-itim tracking-tighter mt-4 mb-1 " +
+            (content ? "text-3xl" : "text-5xl")
+          }
+        >
+          {title}
+        </h1>
+        {content && <p className="text-xl font-bold font-karla">{content}</p>}
       </div>
     </a>
   );
