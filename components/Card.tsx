@@ -75,7 +75,7 @@ const Card = ({
             <h1 className="text-2xl font-bold font-itim tracking-tighter mt-4">
               {title}
             </h1>
-            <p className="text-xl font-medium">{content}</p>
+            <p className="text-xl font-karla">{content}</p>
           </>
         ) : (
           <h1 className="text-5xl font-bold font-itim tracking-tighter mt-4">
