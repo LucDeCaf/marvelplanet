@@ -12,7 +12,7 @@ const Page: NextPage = () => {
   
   return (
     <main className="flex flex-col justify-center">
-      <div className="">
+      <div>
         <FinalCarousel data={carouselData} />
       </div>
       <h1 className="m-4 mb-2 text-center text-5xl font-itim">

@@ -4,11 +4,9 @@ import { BsWhatsapp, BsTelephone } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
 
 const Page: NextPage = () => {
-  const carouselData = ["/chalk.JPG"];
-
   return (
     <main>
-      <FinalCarousel data={carouselData} />
+      <FinalCarousel data={["/chalk.JPG"]} />
       <h1 className="mt-4 text-center text-5xl font-itim">Contact Us</h1>
       <picture>
         <img src="/waves/slate-200.svg" alt="" />
