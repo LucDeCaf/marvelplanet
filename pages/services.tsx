@@ -3,14 +3,13 @@ import FinalCarousel from "../components/FinalCarousel";
 import Card from "../components/Card";
 import { BsFillCaretDownFill } from "react-icons/bs";
 import { FaMoneyBillWave } from "react-icons/fa";
+import Title from "../components/Title";
 
 const Page: NextPage = () => {
   return (
     <main>
       <FinalCarousel data={["/children.JPG"]} />
-      <h1 id="title" className="m-4 mb-0 text-center text-5xl font-itim">
-        Services &amp; Fees
-      </h1>
+      <Title>Services &amp; Fees</Title>
       <div className="text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center m-4">
         <Card
           color="yellow"

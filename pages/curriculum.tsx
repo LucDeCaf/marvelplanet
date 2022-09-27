@@ -1,15 +1,15 @@
 import { NextPage } from "next";
-import BackButton from "../components/BackButton";
 import FinalCarousel from "../components/FinalCarousel";
 import Card from "../components/Card";
 import { BiBookBookmark } from "react-icons/bi";
+import Title from "../components/Title";
 
 const Page: NextPage = () => {
   return (
     <main>
       <FinalCarousel data={["/children.JPG"]} noText={true} />
-      <h1 className="mt-4 mb-2 text-center text-5xl font-itim">Curriculums</h1>
-      <p className="text-gray-800 text-center text-3xl font-karla">
+      <Title>Curriculums</Title>
+      <p className="mt-2 text-gray-800 text-center text-3xl font-karla">
         We offer two different curriculums for you to choose from.
       </p>
       <picture>

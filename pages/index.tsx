@@ -2,23 +2,18 @@ import { NextPage } from "next";
 import { BiBookBookmark } from "react-icons/bi";
 import Card from "../components/Card";
 import FinalCarousel from "../components/FinalCarousel";
+import Title from "../components/Title";
 
 const Page: NextPage = () => {
-  const carouselData = [
-    "/chalk.JPG",
-    "/children.JPG",
-    "/pencil-circle.JPG",
-  ];
-  
+  const carouselData = ["/chalk.JPG", "/children.JPG", "/pencil-circle.JPG"];
+
   return (
     <main className="flex flex-col justify-center">
       <div>
         <FinalCarousel data={carouselData} />
       </div>
-      <h1 className="m-4 mb-2 text-center text-5xl font-itim">
-        Prepare for your future!
-      </h1>
-      <p className="text-gray-800 text-center text-3xl font-karla">
+      <Title>Prepare for your future!</Title>
+      <p className="mt-2 text-gray-800 text-center text-3xl font-karla">
         Out of a love for child development and a desperate need for an
         alternative learning space,
         <br />

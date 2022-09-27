@@ -2,12 +2,13 @@ import type { NextPage } from "next";
 import FinalCarousel from "../components/FinalCarousel";
 import { BsWhatsapp, BsTelephone } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
+import Title from "../components/Title";
 
 const Page: NextPage = () => {
   return (
     <main>
       <FinalCarousel data={["/chalk.JPG"]} />
-      <h1 className="mt-4 text-center text-5xl font-itim">Contact Us</h1>
+      <Title>Contact Us</Title>
       <picture>
         <img src="/waves/slate-200.svg" alt="" />
         <div className="w-screen m-0 p-4 bg-slate-200">

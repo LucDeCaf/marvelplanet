@@ -1,13 +1,14 @@
 import { NextPage } from "next";
 import FinalCarousel from "../../components/FinalCarousel";
 import BackButton from "../../components/BackButton";
+import Title from "../../components/Title";
 
 const Page: NextPage = () => {
   return (
     <main>
       <FinalCarousel data={["/pencil-circle.JPG"]} noText={true} />
       <BackButton>Back</BackButton>
-      <h1 className="m-4 mb-0 text-center text-5xl font-itim">Our Values</h1>
+      <Title>Our Values</Title>
       <picture>
         <img src="/waves/slate-200.svg" alt="" />
       </picture>

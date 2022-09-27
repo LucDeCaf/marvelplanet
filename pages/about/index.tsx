@@ -3,15 +3,16 @@ import Card from "../../components/Card";
 import FinalCarousel from "../../components/FinalCarousel";
 import { FiBook } from "react-icons/fi";
 import { BsFillPersonFill, BsFillStarFill } from "react-icons/bs";
+import Title from "../../components/Title";
 
 const Page: NextPage = () => {
   return (
     <main>
       <FinalCarousel data={["/pencil-circle.JPG"]} noText={true} />
-      <h1 className="m-4 mb-2 text-center text-5xl font-itim">
+      <Title>
         About our family
-      </h1>
-      <h4 className="text-3xl text-center font-karla">
+      </Title>
+      <h4 className="mt-2 text-3xl text-center font-karla">
         Learn about the wonderful work-force behind our tutor centre here at
         Marvel Planet.
       </h4>
