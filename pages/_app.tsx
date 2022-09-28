@@ -6,7 +6,8 @@ import "@fontsource/karla/600.css";
 import "@fontsource/karla/700.css";
 import Head from "next/head";
 import type { AppProps } from "next/app";
-import Layout from "layout/Layout";
+import Navbar from "layout/Navbar";
+import Footer from "layout/Footer";
 import { AuthProvider } from "lib/AuthContext";
 
 function App({ Component, pageProps }: AppProps) {
@@ -15,10 +16,10 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Marvel Planet</title>
       </Head>
-      
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+
+      <Navbar />
+      <Component {...pageProps} />
+      <Footer />
     </AuthProvider>
   );
 }
