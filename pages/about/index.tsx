@@ -24,7 +24,7 @@ const Page: NextPage = () => {
           <Card
             title="History"
             symbol={<FiBook />}
-            color="blue"
+            color="purple"
             url="/about/history"
           />
           <Card
@@ -36,7 +36,7 @@ const Page: NextPage = () => {
           <Card
             title="Values"
             symbol={<BsFillStarFill />}
-            color="blue"
+            color="yellow"
             url="/about/values"
           />
         </div>
