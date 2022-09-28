@@ -7,7 +7,7 @@ import Title from "components/Title";
 const Page: NextPage = () => {
   return (
     <main>
-      <FinalCarousel data={["/children.JPG"]} noText={true} />
+      <FinalCarousel data={["/pencils-left.JPG"]} noText={true} />
       <Title>Curriculums</Title>
       <p className="mt-2 text-gray-800 text-center text-3xl font-karla">
         We offer two different curriculums for you to choose from.
