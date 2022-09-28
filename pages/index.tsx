@@ -13,12 +13,12 @@ const Page: NextPage = () => {
         <FinalCarousel data={carouselData} />
       </div>
       <Title>Prepare for your future!</Title>
-      <p className="mt-2 text-gray-800 text-center text-3xl font-karla">
+      <h2 className="mt-2 text-gray-800 text-center text-3xl font-karla">
         Out of a love for child development and a desperate need for an
         alternative learning space,
         <br />
         Roxanne Edson established Marvel Planet Tutor Center in 2017.
-      </p>
+      </h2>
       <picture>
         <img src="/waves/slate-200.svg" alt="" />
       </picture>
