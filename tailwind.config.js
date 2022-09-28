@@ -20,6 +20,9 @@ module.exports = {
         navDropdown: "navDropdown 0.4s ease-out",
         navDropup: "navDropup 0.5s",
       },
+      listStyleType: {
+        roman: "upper-roman",
+      },
     },
   },
   content: [
