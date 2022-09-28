@@ -1,8 +1,8 @@
 import { NextPage } from "next";
-import FinalCarousel from "../../components/FinalCarousel";
-import BackButton from "../../components/BackButton";
-import Profile from "../../components/Profile";
-import Title from "../../components/Title";
+import FinalCarousel from "components/FinalCarousel";
+import BackButton from "components/BackButton";
+import Profile from "components/Profile";
+import Title from "components/Title";
 
 const Page: NextPage = () => {
   return (
@@ -28,14 +28,14 @@ const Page: NextPage = () => {
           <div>
             <Profile
               name="Such a cool title here."
-              desc="This is a very simple little description, meant to test the waters a bit. nnnevermind."
+              desc="This is a very simple little description, meant to test the waters a bit."
               src="/chalk.JPG"
             />
           </div>
           <div>
             <Profile
               name="Such a cool title here."
-              desc="This is a very simple little description, meant to test the waters a bit. nnnevermind."
+              desc="This is a very simple little description, meant to test the waters a bit."
               src="/chalk.JPG"
             />
           </div>

@@ -1,7 +1,7 @@
 import { NextPage } from "next";
-import FinalCarousel from "../../components/FinalCarousel";
-import BackButton from "../../components/BackButton";
-import Title from "../../components/Title";
+import FinalCarousel from "components/FinalCarousel";
+import BackButton from "components/BackButton";
+import Title from "components/Title";
 import { nanoid } from "nanoid";
 import { BiStar } from "react-icons/bi";
 

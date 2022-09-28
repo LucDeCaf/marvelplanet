@@ -1,9 +1,9 @@
 import { NextPage } from "next";
-import Card from "../../components/Card";
-import FinalCarousel from "../../components/FinalCarousel";
+import Card from "components/Card";
+import FinalCarousel from "components/FinalCarousel";
+import Title from "components/Title";
 import { FiBook } from "react-icons/fi";
 import { BsFillPersonFill, BsFillStarFill } from "react-icons/bs";
-import Title from "../../components/Title";
 
 const Page: NextPage = () => {
   return (
