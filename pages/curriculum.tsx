@@ -1,8 +1,8 @@
 import { NextPage } from "next";
-import FinalCarousel from "../components/FinalCarousel";
-import Card from "../components/Card";
+import FinalCarousel from "components/FinalCarousel";
+import Card from "components/Card";
 import { BiBookBookmark } from "react-icons/bi";
-import Title from "../components/Title";
+import Title from "components/Title";
 
 const Page: NextPage = () => {
   return (

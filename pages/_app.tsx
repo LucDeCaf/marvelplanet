@@ -1,16 +1,17 @@
 import "../styles/globals.css";
 import "@fontsource/itim";
-import "@fontsource/karla/300.css";
+import "@fontsource/karla/400.css";
 import "@fontsource/karla/500.css";
+import "@fontsource/karla/600.css";
 import "@fontsource/karla/700.css";
-import { Fragment } from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
-import Layout from "../layout/Layout";
+import Layout from "layout/Layout";
+import { AuthProvider } from "lib/AuthContext";
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <Fragment>
+    <AuthProvider>
       <Head>
         <title>Marvel Planet</title>
       </Head>
@@ -18,7 +19,7 @@ function App({ Component, pageProps }: AppProps) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </Fragment>
+    </AuthProvider>
   );
 }
 
