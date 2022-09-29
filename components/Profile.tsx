@@ -1,14 +1,14 @@
 import Image from "next/image";
 
-interface Props {
+export interface ProfileType {
   name: string;
   desc: string;
   src: string;
-}
+} 
 
-const Profile = ({ name, desc, src }: Props): JSX.Element => {
+const Profile = ({ name, desc, src }: ProfileType): JSX.Element => {
   return (
-    <div className="border-black border-2 rounded-t-lg">
+    <div className="border-black border-2 rounded-lg bg-white">
       <div className="w-full h-full">
         <Image
           src={src}
@@ -19,9 +19,9 @@ const Profile = ({ name, desc, src }: Props): JSX.Element => {
           className="rounded-t-sm"
         />
       </div>
-      <div className="p-5 space-y-1 font-karla">
-        <h3 className="text-xl font-bold">{name}</h3>
-        <p>{desc}</p>
+      <div className="p-5 space-y-1">
+        <h3 className="text-xl font-itim">{name}</h3>
+        <p className="font-karla">{desc}</p>
       </div>
     </div>
   );
