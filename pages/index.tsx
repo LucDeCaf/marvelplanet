@@ -1,10 +1,9 @@
-import { NextPage } from "next";
 import { BiBookBookmark } from "react-icons/bi";
 import Card from "components/Card";
 import FinalCarousel from "components/FinalCarousel";
 import Title from "components/Title";
 
-const Page: NextPage = () => {
+const Page = () => {
   const carouselData = ["/chalk.JPG", "/children.JPG", "/pencil-circle.JPG"];
 
   return (

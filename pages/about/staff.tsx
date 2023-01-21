@@ -1,11 +1,10 @@
-import { NextPage } from "next";
 import FinalCarousel from "components/FinalCarousel";
 import BackButton from "components/BackButton";
 import Profile, { ProfileType } from "components/Profile";
 import Title from "components/Title";
 import { nanoid } from "nanoid";
 
-const Page: NextPage = () => {
+const Page = () => {
   const ProfileData: ProfileType[] = [
     {
       name: "This is a very cool profile.",

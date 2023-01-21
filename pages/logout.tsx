@@ -1,10 +1,7 @@
 import { useAuth } from "lib/AuthContext";
-import { NextPage } from "next";
 import { useRouter } from "next/router";
 
-const LogoutText = () => <h1 className="h-screen text-center text-4xl">Logging out...</h1>;
-
-const Page: NextPage = () => {
+const Page = () => {
   const { user, loading, logout } = useAuth();
   const router = useRouter();
 
@@ -13,7 +10,7 @@ const Page: NextPage = () => {
     router.push("/");
   }
 
-  return <LogoutText />;
+  return <h1 className="h-screen text-center text-4xl">Logging out...</h1>;
 };
 
 export default Page;

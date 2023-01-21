@@ -1,11 +1,10 @@
-import type { NextPage } from "next";
 import FinalCarousel from "../components/FinalCarousel";
 import Card from "../components/Card";
 import { BsFillCaretDownFill } from "react-icons/bs";
 import { FaMoneyBillWave } from "react-icons/fa";
 import Title from "../components/Title";
 
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <main>
       <FinalCarousel data={["/children.JPG"]} />

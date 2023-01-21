@@ -1,10 +1,9 @@
-import type { NextPage } from "next";
 import FinalCarousel from "components/FinalCarousel";
 import Title from "components/Title";
 import { BsWhatsapp, BsTelephone } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
 
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <main>
       <FinalCarousel data={["/chalk.JPG"]} />

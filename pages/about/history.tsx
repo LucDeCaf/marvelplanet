@@ -1,9 +1,8 @@
-import { NextPage } from "next";
 import FinalCarousel from "components/FinalCarousel";
 import BackButton from "components/BackButton";
 import Title from "components/Title";
 
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <main>
       <FinalCarousel data={["/pencil-circle.JPG"]} noText={true} />

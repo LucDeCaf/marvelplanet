@@ -1,11 +1,10 @@
 import { useAuth } from "lib/AuthContext";
-import { NextPage } from "next";
 import { useRouter } from "next/router";
 import { FormEventHandler, useState } from "react";
 import BackButton from "components/BackButton";
 import LoadingPage from "components/LoadingPage";
 
-const Page: NextPage = () => {
+const Page = () => {
   const { user, loading, login } = useAuth();
   const router = useRouter();
 

@@ -1,11 +1,10 @@
-import { NextPage } from "next";
 import Card from "components/Card";
 import FinalCarousel from "components/FinalCarousel";
 import Title from "components/Title";
 import { FiBook } from "react-icons/fi";
 import { BsFillPersonFill, BsFillStarFill } from "react-icons/bs";
 
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <main>
       <FinalCarousel data={["/pencil-circle.JPG"]} noText={true} />

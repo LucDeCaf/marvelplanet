@@ -1,5 +1,5 @@
 import { collection, getDocs } from "firebase/firestore";
-import { GetStaticProps, NextPage } from "next";
+import { GetStaticProps } from "next";
 import Link from "next/link";
 import Title from "components/Title";
 import { db } from "utils/firebase";
@@ -33,7 +33,16 @@ const ListItem = ({ children, href }: { children: string; href: string }) => {
   );
 };
 
-const Page: NextPage<PageProps> = ({ newsletters }) => {
+const Page = ({
+  newsletters,
+}: {
+  newsletters: {
+    id: string;
+    created: any;
+    downloadUrl: any;
+    term: any;
+  }[];
+}) => {
   console.log(newsletters);
   const { user, loading } = useAuth();
 

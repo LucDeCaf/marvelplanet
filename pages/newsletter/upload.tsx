@@ -2,12 +2,12 @@ import LoadingPage from "components/LoadingPage";
 import { collection, doc, getDocs, setDoc } from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { useAuth } from "lib/AuthContext";
-import { GetStaticProps, NextPage } from "next";
-import { useRouter } from "next/router";
+import { GetStaticProps } from "next";
+import useRouter from "next/router";
 import { FormEventHandler, useState } from "react";
 import { db, storage } from "utils/firebase";
 
-const Page: NextPage<{ nextNumber: number }> = ({ nextNumber }) => {
+const Page = ({ nextNumber }: { nextNumber: number }) => {
   const { user, loading } = useAuth();
   const router = useRouter();
   const [alertData, setAlertData] = useState({
