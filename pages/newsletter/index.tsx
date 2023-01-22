@@ -89,14 +89,30 @@ const Page = ({
                 className="m-4 text-xl font-karla font-bold"
                 htmlFor="test"
               >
-                Upload an image:
+                Upload a newsletter:
               </label>
               <button
-                className="bg-blue-600 text-white font-bold px-3 py-1 rounded-md hover:bg-blue-500 active:bg-blue-700 "
+                className="bg-blue-600 text-white font-bold px-3 py-1 rounded-md hover:bg-blue-500 active:bg-blue-700 transition-colors"
                 id="test"
               >
                 <Link href="/newsletter/upload">
                   <a>Upload</a>
+                </Link>
+              </button>
+            </div>
+            <div className="mt-2">
+              <label
+                className="m-4 text-xl font-karla font-bold"
+                htmlFor="test"
+              >
+                Delete a newsletter:
+              </label>
+              <button
+                className="bg-red-600 text-white font-bold px-3 py-1 rounded-md hover:bg-red-500 active:bg-red-700 transition-colors"
+                id="test"
+              >
+                <Link href="/newsletter/delete">
+                  <a>Delete</a>
                 </Link>
               </button>
             </div>

@@ -3,7 +3,7 @@ import { collection, doc, getDocs, setDoc } from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { useAuth } from "lib/AuthContext";
 import { GetStaticProps } from "next";
-import useRouter from "next/router";
+import { useRouter } from "next/router";
 import { FormEventHandler, useState } from "react";
 import { db, storage } from "utils/firebase";
 
@@ -36,10 +36,9 @@ const Page = ({ nextNumber }: { nextNumber: number }) => {
     e.preventDefault();
 
     try {
-      setAlertData((prevData) => ({ ...prevData, show: true }));
-
       setAlertData((prevData) => ({
         ...prevData,
+        show: true,
         message: "Initializing database...",
       }));
       const newslettersRef = collection(db, "newsletters");
